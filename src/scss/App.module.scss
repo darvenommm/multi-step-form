@@ -1,0 +1,63 @@
+@use './variables';
+
+.outerContainer {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.innerContainer {
+  display: flex;
+
+  background-color: var(--antagonist-color);
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px 1px var(--shadow-color);
+
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 20px;
+  padding-right: 100px;
+  min-height: 600px;
+
+  @media (max-width: variables.$pre-descktop-width) {
+    padding-right: 20px;
+  }
+
+  @media (max-width: variables.$tablet-width) {
+    align-self: start;
+
+    margin-top: 100px;
+    min-height: 0;
+  }
+}
+
+.navigationContainer {
+  display: flex;
+
+  margin-right: 100px;
+
+  @media (max-width: variables.$pre-descktop-width) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: variables.$tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    margin-right: 0;
+  }
+}
+
+.blockContainer {
+  display: flex;
+
+  width: 100%;
+}

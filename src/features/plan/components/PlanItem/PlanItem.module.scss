@@ -1,0 +1,62 @@
+@use '../../../../scss/variables';
+
+.container {
+  border-radius: 5px;
+  cursor: pointer;
+
+  border: 2px solid var(--border-color);
+  padding: 20px;
+  width: 150px;
+
+  @media (max-width: variables.$desktop-width) {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
+}
+
+.active,
+.container:hover {
+  border-color: var(--main-text-color);
+}
+
+.images {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 25px;
+
+  @media (max-width: variables.$desktop-width) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+.title {
+  font-size: 21px;
+
+  margin: 0;
+  margin-bottom: 10px;
+
+  @media (max-width: variables.$desktop-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.textContainer {
+  color: var(--extra-text-color);
+
+  margin-bottom: 10px;
+
+  @media (max-width: variables.$desktop-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.extra {
+  font-size: 14px;
+
+  margin: 0;
+}

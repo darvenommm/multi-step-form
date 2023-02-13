@@ -1,0 +1,14 @@
+.link {
+  text-decoration: underline;
+  color: var(--extra-text-color);
+
+  cursor: pointer;
+
+  &:hover {
+    color: var(--purple);
+  }
+
+  &:active {
+    color: #5b7ee9;
+  }
+}

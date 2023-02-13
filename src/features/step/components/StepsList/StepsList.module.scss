@@ -1,0 +1,28 @@
+@use '../../../../scss/variables';
+
+.list {
+  background-image: url("/assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+
+  width: 310px;
+  margin: 0;
+  padding: 40px;
+
+  @media (max-width: (variables.$tablet-width + 30px)) {
+    width: 270px;
+  }
+
+  @media (max-width: variables.$tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    background-position: 0px 83%;
+    border-radius: 0;
+
+    width: 100%;
+    min-height: 150px;
+  }
+}

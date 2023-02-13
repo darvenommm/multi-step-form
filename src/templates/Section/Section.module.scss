@@ -1,0 +1,45 @@
+@use '../../scss/variables';
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 30px;
+  width: 100%;
+
+  @media (max-width: variables.$tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.headerContainer {
+  margin-bottom: 35px;
+}
+
+.footerContainer {
+  margin-bottom: 40px;
+
+  @media (max-width: variables.$tablet-width) {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: var(--antagonist-color);
+    box-shadow: 0 0px 5px 1px var(--shadow-color);
+
+    margin-bottom: 0;
+    padding: 20px;
+  }
+
+  @media (max-width: variables.$tablet-width) and
+  (max-height: variables.$small-mobile-height) {
+    bottom: -90px;
+  }
+
+  @media (max-width: variables.$tablet-width) and
+  (max-height: variables.$medium-mobile-height) {
+    bottom: -120px;
+  }
+}

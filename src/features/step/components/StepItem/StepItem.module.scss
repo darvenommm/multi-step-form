@@ -1,0 +1,64 @@
+@use '../../../../scss/variables';
+
+.item {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: variables.$tablet-width) {
+    margin: 0;
+    margin-right: 10px;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--antagonist-color);
+
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
+  margin-right: 30px;
+  border: 1px solid var(--antagonist-color);
+
+  @media (max-width: variables.$tablet-width) {
+    margin: 0;
+  }
+}
+
+.active {
+  color: var(--main-text-color);
+
+  background-color: var(--antagonist-color);
+}
+
+.textContainer {
+  @media (max-width: variables.$tablet-width) {
+    display: none;
+  }
+}
+
+.extraText {
+  font-size: 12px;
+  color: var(--extra-text-color);
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.text {
+  text-transform: uppercase;
+  color: var(--antagonist-color);
+
+  margin: 0;
+}

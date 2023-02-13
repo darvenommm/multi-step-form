@@ -1,0 +1,90 @@
+.firstContainer {
+  background-color: #f7f5f5;
+  border-radius: 10px;
+
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.planContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 15px;
+}
+
+.planContainerWithoutExtras {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.planTitle {
+  font-size: 21px;
+
+  margin-bottom: 7px;
+}
+
+.planPrice {
+  font-weight: 700;
+  font-size: 17px;
+
+  margin-left: 10px;
+}
+
+.extras {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.extraTitle {
+  color: var(--extra-text-color);
+  font-size: 18px;
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.extraPrice {
+  margin-left: 10px;
+}
+
+.lastContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 25px;
+  margin-bottom: 30px;
+}
+
+.totalTitle {
+  color: var(--extra-text-color);
+  font-size: 15px;
+
+  margin: 0;
+}
+
+.totalPrice {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--purple);
+
+  margin-left: 10px;
+}

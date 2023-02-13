@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"),
+    url("/assets/fonts/Ubuntu-Regular.ttf") format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"),
+    url("/assets/fonts/Ubuntu-Medium.ttf") format('opentype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"),
+    url("/assets/fonts/Ubuntu-Bold.ttf") format('opentype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --antagonist-color: #ffffff;
+  --extra-text-color: #aaadbd;
+  --main-text-color: #02295a;
+  --error-color: #ed3548;
+  --app-bg-color: #ebedf4;
+  --shadow-color: #b4b0b0;
+  --border-color: #d3d2d2;
+  --purple: #473dff;
+}
+
+body {
+  color: var(--main-text-color);
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+
+  background-color: var(--app-bg-color);
+
+  margin: 0;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,71 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 10px;
+  cursor: pointer;
+
+  border: 2px solid var(--border-color);
+  padding: 20px 30px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    border-color: var(--main-text-color);
+  }
+
+  &:active {
+    border-color: #0e2cb1;
+  }
+}
+
+.activeItem {
+  border-color: var(--main-text-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--antagonist-color);
+
+  background-image: url('/assets/images/icon-checkmark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  border-radius: 5px;
+
+  border: 2px solid var(--purple);
+  min-width: 25px;
+  min-height: 25px;
+  margin-right: 20px;
+}
+
+.activeCheckbox {
+  background-color: var(--purple);
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.description {
+  margin: 0;
+}
+
+.priceContainer {
+  color: var(--purple);
+
+  margin-left: 10px;
+}

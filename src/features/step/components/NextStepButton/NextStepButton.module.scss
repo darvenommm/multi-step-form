@@ -1,0 +1,22 @@
+.button {
+  color: var(--antagonist-color);
+
+  background-color: var(--main-text-color);
+  border-radius: 5px;
+
+  padding: 10px 15px;
+  border: none;
+  min-width: 100px;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: #1e497c;
+  }
+
+  &:active:not(:disabled) {
+    background-color: #0b203a;
+  }
+}
